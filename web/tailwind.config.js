@@ -1,0 +1,96 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        // Brutalist palette
+        paper: '#f5f5f0',
+        'paper-2': '#ebebe2',
+        ink: '#0a0a0a',
+        'ink-2': '#1a1a1a',
+        muted: '#6b6b66',
+        accent: '#ff3b00',
+        'accent-2': '#ffe000',
+        ok: '#007a3d',
+        bad: '#c00020',
+
+        // Legacy aliases mapped to brutalist tokens (keeps old pages compiling)
+        void: '#f5f5f0',
+        abyss: '#f5f5f0',
+        deep: '#ebebe2',
+        surface: '#f5f5f0',
+        elevated: '#ebebe2',
+        'arena-border': '#0a0a0a',
+        'border-glow': '#0a0a0a',
+        cyan: { DEFAULT: '#0a0a0a', dim: '#0a0a0a', glow: '#ebebe2', dark: '#0a0a0a' },
+        magenta: { DEFAULT: '#ff3b00', dim: '#c02d00', glow: '#ebebe2', dark: '#0a0a0a' },
+        gold: { DEFAULT: '#ffe000', dim: '#c0a800' },
+        silver: '#c0c0c0',
+        bronze: '#cd7f32',
+        success: '#007a3d',
+        danger: '#c00020',
+        warning: '#ff3b00',
+        'text-primary': '#0a0a0a',
+        'text-secondary': '#3a3a35',
+        'text-tertiary': '#6b6b66',
+      },
+      fontFamily: {
+        display: ['"Archivo Black"', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'monospace'],
+        body: ['"Space Grotesk"', 'sans-serif'],
+      },
+      fontSize: {
+        'display-xl': ['6rem', { lineHeight: '0.95', letterSpacing: '-0.04em' }],
+        'display-lg': ['4rem', { lineHeight: '0.95', letterSpacing: '-0.03em' }],
+        'display-md': ['2.5rem', { lineHeight: '1', letterSpacing: '-0.02em' }],
+        'display-sm': ['1.5rem', { lineHeight: '1.1' }],
+      },
+      boxShadow: {
+        brutal: '8px 8px 0 0 #0a0a0a',
+        'brutal-sm': '4px 4px 0 0 #0a0a0a',
+        'brutal-lg': '12px 12px 0 0 #0a0a0a',
+        'brutal-accent': '8px 8px 0 0 #ff3b00',
+        // Legacy → flatten
+        'glow-cyan': '6px 6px 0 0 #0a0a0a',
+        'glow-magenta': '6px 6px 0 0 #ff3b00',
+        'glow-gold': '6px 6px 0 0 #ffe000',
+        'glow-success': '6px 6px 0 0 #007a3d',
+        'inner-glow': 'none',
+        card: '6px 6px 0 0 #0a0a0a',
+        'card-hover': '12px 12px 0 0 #0a0a0a',
+      },
+      borderRadius: {
+        none: '0',
+        DEFAULT: '0',
+        sm: '0',
+        md: '0',
+        lg: '0',
+        xl: '0',
+        '2xl': '0',
+        '3xl': '0',
+        full: '0',
+      },
+      backgroundImage: {
+        'gradient-radial': 'none',
+        'gradient-conic': 'none',
+        'gradient-mesh': 'none',
+      },
+      animation: {
+        'pulse-slow': 'none',
+        'spin-slow': 'spin 20s linear infinite',
+        'bounce-slow': 'none',
+        shimmer: 'none',
+      },
+      spacing: {
+        18: '4.5rem',
+        22: '5.5rem',
+      },
+    },
+  },
+  plugins: [],
+}

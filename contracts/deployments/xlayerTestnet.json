@@ -1,0 +1,19 @@
+{
+  "network": "xlayerTestnet",
+  "chainId": 1952,
+  "timestamp": "2026-04-08T05:01:48.892Z",
+  "deployer": "0xbFA261EaD191de87c9666d04D1a2955ff44E5993",
+  "contracts": {
+    "MockIdentityRegistry": "0xEe07da4b58Adf3F34177CeFcFE2969b6EF1DA127",
+    "ArenaRegistry": "0x6c6BD990C78335b2f66E122c31e10FAF22EFd955",
+    "MatchEscrow": "0xFa51DA8E3b53392463b3231121e7bDa1f13712a8",
+    "MatchManager": "0x06157607D1E101c0bC7bf3C31A194cb6b5aF7A89",
+    "TournamentManager": "0xe790409f46a2cd93A508CF943E270139603ABC1A",
+    "LeaderboardContract": "0xc363349c6e4e2D9148C6DbE86200c5cB4F31EFf4"
+  },
+  "configuration": {
+    "USDC": "0x74b7F16337b8972027F6196A17a631aC6dE26d22",
+    "IdentityRegistry": "0xEe07da4b58Adf3F34177CeFcFE2969b6EF1DA127",
+    "PlatformWallet": "0xbFA261EaD191de87c9666d04D1a2955ff44E5993"
+  }
+}

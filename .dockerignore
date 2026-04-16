@@ -1,0 +1,40 @@
+# Git
+.git
+.gitignore
+
+# Node modules
+node_modules
+**/node_modules
+
+# Build artifacts
+target
+**/target
+
+# Environment files (use env vars in production)
+.env
+**/.env
+
+# Documentation
+*.md
+!README.md
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# Frontend (not needed for backend build)
+web/
+sdk-ts/
+
+# Contracts (not needed for backend build)
+contracts/
+
+# SDK (not needed for backend build)
+sdk/
+
+# Misc
+.DS_Store
+*.log
+.claude/

@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ["rustc", "cargo", "gcc", "openssl", "pkg-config"]
+
+[variables]
+RUST_VERSION = "latest"
+
+[phases.build]
+cmds = ["cd backend && cargo build --release"]
+
+[start]
+cmd = "./backend/target/release/agent-arena-backend"
